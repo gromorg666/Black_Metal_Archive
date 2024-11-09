@@ -1,20 +1,31 @@
+/* Gothic Black Metal Theme */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: #d3d3d3;
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #000;
+    color: #b2b2b2;
     padding: 1rem;
     text-align: center;
+    font-family: 'Creepster', cursive; /* Use a gothic or black metal-style font if available */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px #660000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
 nav ul li {
@@ -23,14 +34,25 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #b2b2b2;
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
 }
 
 #search {
     margin-top: 1rem;
     padding: 0.5rem;
     width: 80%;
+    background-color: #333;
+    color: #d3d3d3;
+    border: 1px solid #666;
+    border-radius: 5px;
 }
 
 #gallery {
@@ -41,32 +63,47 @@ nav ul li a {
 }
 
 .album {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #333;
+    border: 1px solid #555;
     margin: 1rem;
-    padding: 1rem;
-    width: 200px;
+    padding: 1.5rem;
+    color: #d3d3d3;
+    width: auto; /* Adjust width to content */
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.album:hover {
+    transform: scale(1.05);
+    border-color: #660000;
 }
 
 .album img {
     max-width: 100%;
     height: auto;
+    border: 1px solid #660000;
+    margin-bottom: 0.5rem;
 }
 
 .album h2 {
     font-size: 1.5rem;
+    color: #ff4d4d;
     margin: 0.5rem 0;
 }
 
 .album h4 {
     margin: 0.5rem 0;
+    font-weight: bold;
+    color: #999;
 }
 
 .album ul {
     list-style: none;
     padding: 0;
     margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #b2b2b2;
 }
 
 .album ul h5 {
