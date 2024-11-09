@@ -1,59 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Álbumes Musicales</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Álbumes Musicales</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="galeria">
-      <h1>Galería de Álbumes</h1>
-      <div class="grid">
-        <!-- Ejemplo de álbum -->
-        <article data-aos="fade-up" data-name="The Battle in the Unknown South" data-year="2008" data-tracks="Track 1, Track 2, Track 3">
-          <h2>Adonay</h2>
-          <img src="The_Battle_in_the_Unknown_South.jpg" alt="Portada de Álbum 1" class="album-img">
-          <h3>The Battle in the Unknown South</h3>
-        </article>
-        <!-- Agregar más artículos para otros álbumes -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2024 Galería Musical</p>
-  </footer>
-
-  <!-- Modal para imagen en pantalla completa -->
-  <div id="modal" class="modal">
-    <span class="close">&times;</span>
-    <img id="modal-img" src="" alt="Imagen del Álbum">
-    <div id="modal-info">
-      <h2 id="album-title"></h2>
-      <p id="album-year"></p>
-      <h3>Track List</h3>
-      <ul id="track-list"></ul>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <header>
+        <h1>Galería de Álbumes Musicales</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Álbumes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Buscar álbum...">
+    </header>
+    <main>
+        <div id="gallery"></div>
+    </main>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
